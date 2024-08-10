@@ -17,8 +17,8 @@ func main() {
 	var code bool
 	var decode bool
 	var help bool
-	accentedChars := "éèêëàâîïôùûç"
 	var ret string
+	accentedChars := "éèêëàâîïôùûç"
 
 	flag.BoolVar(&code, "code", false, "Afin de coder un msg")
 	flag.BoolVar(&decode, "decode", false, "afin de decoder un msg")
@@ -40,12 +40,6 @@ func main() {
 				log.Fatal("Erreur--le message comporte un accent--")
 			}
 		}
-		// fmt.Println("Donne le nombre de décalage voulu:")
-		// scanner.Scan()
-		// delta, err := strconv.Atoi(scanner.Text())
-		// if err != nil {
-		// 	log.Fatal("impossible de lire le nombre")
-		// }
 		ret += cipher(string(stringCode), delta)
 		fmt.Printf("Voici le message coder:\n%s\n", ret)
 	}
@@ -54,23 +48,13 @@ func main() {
 		fmt.Println("Rentre le message a decoder:")
 		scanner.Scan()
 		stringCode = strings.Trim(scanner.Text(), " ")
-		// fmt.Println("Donne le nombre de décalage:")
-		// scanner.Scan()
-		// delta, err := strconv.Atoi(scanner.Text())
-		// if err != nil {
-		// 	log.Fatal("impossible de lire le nombre")
-		// }
 		ret += DecodeCipher(string(stringCode), delta)
 		fmt.Printf("Voici le message décoder:\n%s\n", ret)
-		// fmt.Println(CamelCaseCount("oneTwoThree"))
-		// fmt.Println(cipher("oneTwoThree", 14))
-		// fmt.Println("decodeur:", DecodeCipher("cbsHkcHvfss", 14))
 	} 
-	if help{
+	if help {
 		flag.Usage()
-	}else {
+	}else if !code && !decode &&!help{
 		fmt.Println("tapez -help pour voir les cmd")
-		
 	}
 
 }
