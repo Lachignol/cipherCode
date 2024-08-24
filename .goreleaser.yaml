@@ -48,7 +48,7 @@ changelog:
 brews:
   -
     name: cipherCode
-    homepage: https://github.com/Lachignol/cipherCode-cli
+    homepage: https://github.com/Lachignol/cipherCode
     repository:
      owner: Lachignol
      name: homebrew-Lachignol 
