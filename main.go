@@ -27,7 +27,7 @@ func main() {
 	flag.Parse()
 	if code {
 		scanner := bufio.NewScanner(os.Stdin)
-		fmt.Println("--- Info: Pas d'accent et remplace les espaces par [-] ---\nEcrit le message a coder:")
+		fmt.Println("\n--- Info: Pas d'accent et remplace les espaces par [-] ---\n\nEcrit le message à codé:")
 		scanner.Scan()
 		stringCode = strings.Trim(scanner.Text(), " ")
 		switch strings.Index(stringCode, " ") {
@@ -41,15 +41,15 @@ func main() {
 			}
 		}
 		ret += cipher(string(stringCode), delta)
-		fmt.Printf("Voici le message coder:\n%s\n", ret)
+		fmt.Printf("\nVoici le message codé:\n%s\n", ret)
 	}
 	if decode {
 		scanner := bufio.NewScanner(os.Stdin)
-		fmt.Println("Rentre le message a decoder:")
+		fmt.Println("\nRentre le message à decodé:")
 		scanner.Scan()
 		stringCode = strings.Trim(scanner.Text(), " ")
 		ret += DecodeCipher(string(stringCode), delta)
-		fmt.Printf("Voici le message décoder:\n%s\n", ret)
+		fmt.Printf("\nVoici le message décoder:\n%s\n", ret)
 	} 
 	if help {
 		flag.Usage()
