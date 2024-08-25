@@ -22,42 +22,42 @@ brew install lachignol/lachignol/cipherCode
 Vous pouvez ensuite taper :
 
 ```
-cipherCode  -help
+cipherCode  --help
 ```
 
 Afin de voir les commandes disponibles 
 
-### Exemple :
+### Exemples :
 
 #### Afin de coder le message voulu:
 ```
-cipherCode -code
+cipherCode --code
 ```
 
-![cipherCode-code](https://github.com/user-attachments/assets/1a684f71-6d0f-402e-9f1b-9646299e532a)
+![cipherCode-code](https://github.com/user-attachments/assets/7f05c8ff-6b6d-4976-904f-4fc464b5ffbf)
 
 
 #### Afin de décoder le message voulu:
 ```
-cipherCode -decode
+cipherCode --decode
 ```
 
+![cipherCode-decode](https://github.com/user-attachments/assets/ec3f87f6-2ef9-4076-92eb-a26eaa899913)
 
-![cipherCode-decode](https://github.com/user-attachments/assets/8f2d80bf-5d40-4cd4-91b8-12126bc7edd4)
 
 #### Afin de coder le message voulu avec le delta choisi (Nombre de décalage de lettres):
 ```
-cipherCode -code -delta 1
+cipherCode --code --delta 1
 ```
 
-
-![cipherCode-code-delta-1](https://github.com/user-attachments/assets/955e80d0-050e-47e2-865e-75e29b4a491b)
+![cipherCode-code-delta-1](https://github.com/user-attachments/assets/56ffc143-9485-45b5-a014-e472de1a6ac9)
 
 
 #### Afin de décoder le message voulu avec le delta choisi (Nombre de décalage de lettres):
 ```
-cipherCode -decode -delta 1
+cipherCode --decode --delta 1
 ```
 
-![cipherCode-decode-delta-1](https://github.com/user-attachments/assets/ab2d7723-d427-42b2-9252-ae4d7caf927f)
+![cipherCode-decode-delta-1](https://github.com/user-attachments/assets/523f0493-da1a-41fb-a6f4-6f62123768c0)
+
 
